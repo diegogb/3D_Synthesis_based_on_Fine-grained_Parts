@@ -23,7 +23,8 @@ NOTES ABOUT THE FIGURES IN OUR PAPER:
   (*) Figure 11(a): Table8.obj; Figure 11(b): Table6.obj; Figure 11(c): ChairArms3.obj; Figure 11(d): ChairArms9.obj; Figure 11(e): Table10.obj; Figure 11(f): ChairArms2.obj
   
 (2) The fine-grained segmentations shown in the figures of our paper were generated from to the .ply files corresponding to each 3D mesh mentioned above. For example:
-  (*) Figure 2 (right), and Figure 9 (Template-Top): seg-Table11.ply  
+  (*) Figure 2 (right), and Figure 9 (Template-Top): seg-Table11.ply
   (*) Figure 6 (a): seg-Table7.ply; Figure 6(b): seg-Table4.ply; and so on.
+  (**) The fine-grained segmentation shown in Figure 4 corresponds to the file seg-ChairArms8.ply
 % ------- %
 
