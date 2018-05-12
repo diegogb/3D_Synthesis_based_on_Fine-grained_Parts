@@ -1,4 +1,4 @@
-This folder contains all the input shapes employed in the experiments of our paper. 
+This folder contains all the input shapes employed for the experiments described in our paper. 
 % ------- %
 IMPORTANT NOTE:
 These 3D shapes are included here for completeness only. For synthesizing 3D shapes using our method, you can use the pre-processed data and the scripts provided in this repository: see the Readme file on the root of this repository for details.
