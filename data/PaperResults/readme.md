@@ -5,8 +5,8 @@ These 3D shapes and images are included for completeness only. To generate the s
 % ------- %
 
 This folder is divided into two subfolders 
-1) 3D: contains a ZIP file with all the 3D shapes (point clouds and meshes) that we show in our paper.
-2) Images: contains a ZIP file with the images (PNG) that we used to create the Figures of our paper.
+1) 3D: contains several ZIP files (one per each image shown in the results Section of our article) with all the 3D shapes (point clouds and meshes) that we show in our paper.
+2) Images: contains a ZIP file with all the images (PNG) that we used to create the Figures of our paper.
 
 The ZIP file contained in the subfolder "3D" you can find two types of files:
 (*) .obj files: containing each synthesized 3D mesh presented in the results section of our paper. 
