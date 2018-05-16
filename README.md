@@ -16,7 +16,7 @@ NOTE: some of these .mat files are large (more than 50 Mb in some cases).
 
 3) To synthesize 3D shapes using our method you require: all the files in the root of this repository AND the files contained in the folder called "OBB"
 
-4) This repository also includes a folder called "data", which contains the shapes of our experimental input sets, as well as the synthesized shapes presented in our paper. Please check the file "readme.md" inside the folder "data" for details.
+4) This repository also includes a folder called "data", which contains the shapes of our experimental input sets, as well as the synthesized shapes presented in our paper. Please check the file "readme.md" inside the folder "data/input" for details about our input sets.
 
 NOTES: some of the files contained in the "data" folder are large ZIP files (more than 20Mb in some cases).
 
