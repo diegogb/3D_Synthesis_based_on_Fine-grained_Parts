@@ -17,9 +17,9 @@ This folder is divided into two subfolders that contain the 3D models of the dat
 
 In each of these two subfolders you can find two types of files:
 
-*(a) .obj files: containing each input 3D mesh. *
+(a) .obj files: containing each input 3D mesh.
 
-*(b) .ply files: containing each fine-grained segmentation that we obtained from the corresponding 3D mesh *
+(b) .ply files: containing each fine-grained segmentation that we obtained from the corresponding 3D mesh
 
 NOTE: The hybrid set mentioned in our paper combines all the table models with a subset of 15 chair models, which correspond to the following .obj files: ChairArms1.obj, ChairArms10.obj, ChairArms2.obj, ChairArms4.obj, ChairArms9.obj, ChairNoArms1.obj, ChairNoArms12.obj, ChairNoArms17.obj, ChairNoArms18.obj, ChairNoArms19.obj, ChairNoArms2.obj, ChairNoArms4.obj, ChairNoArms5.obj, ChairNoArms8.obj, ChairNoArms9.obj
 
