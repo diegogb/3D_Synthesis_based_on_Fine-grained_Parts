@@ -64,7 +64,7 @@ To generate new .MEX files in your machine:
 
 3.1) You must have installed a C++ compiler compatible with Matlab. 
 
-There are several free C++ compiler that you can use. For a complete updated list of C++ compilers compatible with Matlab, you can check the following website:
+For a complete updated list of C++ compilers compatible with Matlab, you can check the following website:
 https://www.mathworks.com/support/compilers.html
 
 3.2) Open and run the script make.m that is inside the folder "OBB".
