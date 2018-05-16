@@ -28,6 +28,7 @@ The files contained in the "data" folder are NOT required to execute our code.
 
 *********
 //---
+
 ** USAGE INSTRUCTIONS FOR THE CODE IN THIS REPOSITORY: **
 1) Requirements:
 
@@ -43,9 +44,11 @@ Fish, N, Averkiou, M, Van Kaick, O, Sorkine-Hornung, O, Cohen-Or, D, Mitra, NJ. 
 Graphics 2014;33(4):34:1–34:11.
 
 The C++ code for computing an OBB is inside the folder "OBB".
+
 //---
 
 //---
+
 ** EXECUTING THE CODE:**
 1) Download all the code and pre-processed data (.mat files) from this repository into any folder in your machine.
 
@@ -67,6 +70,7 @@ https://www.mathworks.com/support/compilers.html
 3.2) Open and run the script make.m that is inside the folder "OBB".
 
 ---
+
 **
 4) RUNNING THE SCRIPTS:
 
@@ -91,5 +95,6 @@ https://www.mathworks.com/support/compilers.html
 **
 
 Each script contains detailed comments and usage instructions.
+
 //---
 *********
