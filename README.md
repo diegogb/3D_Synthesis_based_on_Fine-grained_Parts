@@ -23,7 +23,7 @@ NOTES: some of the files contained in the "data" folder are large ZIP files (mor
 The files contained in the "data" folder are NOT required to execute our code.
 
 
-*For questions about the code, you may contact Diego Gonzalez: diego.gonzalez@carleton.ca *
+- For questions about the code, you may contact Diego Gonzalez: diego.gonzalez@carleton.ca
 *********
 
 *********
