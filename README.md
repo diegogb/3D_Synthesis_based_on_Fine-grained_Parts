@@ -1,7 +1,7 @@
 # 3D_Synthesis_based_on_Fine-grained_Parts
 Code for synthesizing 3D Man-made Shapes using fine-grained segments. This is the code for the work: 
 
-**Gonzalez D. and van Kaick Oliver. 3D Synthesis of Man-made Objects based on Fine-grained Parts. Computers & Graphics, Special Issue on Shape Modeling International SMI. 2018. In Press.**
+**Gonzalez D. and van Kaick Oliver. "3D Synthesis of Man-made Objects based on Fine-grained Parts". Computers & Graphics, Special Issue on Shape Modeling International SMI. 2018. In Press.**
 
 Please cite our publication if you use our code and/or for your own project.
 
