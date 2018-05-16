@@ -10,7 +10,7 @@ Please cite our publication if you use our code and/or for your own project.
 We provide the code for synthesizing 3D models using our approach and employing pre-processed data. That is, our code uses fine-grained segments previously computed to generate new 3D shapes.
 
 1) We provide the pre-processed data in the form of several matlab files (.mat files). 
-NOTE: some of these .mat files are large (more than 50 Mb).
+NOTE: some of these .mat files are large (more than 50 Mb in some cases).
 
 2) We provide also the Matlab and C++ code used by our synthesis application.
 
@@ -18,7 +18,7 @@ NOTE: some of these .mat files are large (more than 50 Mb).
 
 4) This repository also includes a folder called "data", which contains the shapes of our experimental input sets, as well as the synthesized shapes presented in our paper. Please check the file "readme.md" inside the folder "data" for details.
 
-NOTES: some of the files contained in the data folder are large. 
+NOTES: some of the files contained in the "data" folder are large ZIP files (more than 20Mb in some cases).
 
 The files contained in the "data" folder are NOT required to execute our code.
 
