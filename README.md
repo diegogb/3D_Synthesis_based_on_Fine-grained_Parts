@@ -76,6 +76,8 @@ https://www.mathworks.com/support/compilers.html
 
 4.1) To replicate the figures shown in our paper, run the script files called "FigN.m" to generate the 3D shapes (point cloud and mesh) for the corresponding figure.
 
+*NOTE: We do not include a script for Figure 12 center, since this figure shows a synthesized point cloud that is the same as the one shown in Fig 7(b). Likewise, we do not include the 3D meshes of Figure 1, since they are also presented in other figures of our article*
+
 4.2) To generate timing statistics: on matlab, run the following scripts: 
 
 4.2.1) SynthesizeChairCollection_timings.m: to generate a .txt file with execution times for our input dataset of chairs. (This script will also synthesize a new collection of 3D chair models).
