@@ -1,8 +1,12 @@
 This folder contains all the input shapes employed for the experiments described in our paper.
 
 % ------- %
+
 IMPORTANT NOTE:
-These 3D shapes are included here for completeness only. For synthesizing 3D shapes using our method, you can use the pre-processed data and the scripts provided in this repository: see the Readme file on the root of the repository for details.
+These 3D shapes are included here for completeness and in case you want to use the same input datasets that we have employed. 
+
+**For synthesizing 3D shapes using our method, you can use the pre-processed data and the scripts provided in this repository: see the Readme file on the root of the repository for details.**
+
 % ------- %
 
 This folder is divided into two subfolders that contain the 3D models of the datasets described in "Section 6 - Experimental Results" of our paper:
