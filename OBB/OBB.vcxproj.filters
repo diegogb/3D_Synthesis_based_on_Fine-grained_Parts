@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sym_bb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5ContSymBox3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Query.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5MathematicsPCH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5ContMinBox2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5ConvexHull3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint3Triangle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5ContBox3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5ContMinBox3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5ConvexHull.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5ConvexHull1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5ConvexHull2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5CorePCH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Distance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistCircle3Circle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistLine2Line2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistLine2Ray2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistLine2Segment2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistLine3Box3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistLine3Circle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistLine3Line3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistLine3Ray3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistLine3Rectangle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistLine3Segment3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistLine3Triangle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint2Box2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint2Ellipse2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint2Hyperbola2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint2Line2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint2Ray2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint2Segment2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint3Box3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint3Circle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint3Ellipsoid3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint3Frustum3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint3Line3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint3Plane3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint3Ray3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint3Rectangle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint3Segment3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistPoint3Tetrahedron3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistRay2Ray2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistRay2Segment2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistRay3Box3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistRay3Ray3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistRay3Rectangle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistRay3Segment3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistRay3Triangle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistRectangle3Rectangle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistSegment2Segment2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistSegment3Box3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistSegment3Rectangle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistSegment3Segment3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistSegment3Triangle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistTriangle3Rectangle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5DistTriangle3Triangle3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5EigenDecomposition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Endian.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5FileIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Matrix2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Matrix3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Matrix4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Mutex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Quaternion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5SingularValueDecomposition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Vector2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Vector4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oobb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sym_plane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5ApprGaussPointsFit3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5Assert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5BitHacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symOBB_PointSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Wm5Memory.inl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="Wm5Vector3.inl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="Wm5EdgeKey.inl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="Wm5Box2.inl">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Wm5Memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Query.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5MathematicsPCH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5MathematicsLIB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5CoreLIB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5ContSymBox3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5ContMinBox2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5ConvexHull3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint3Triangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5EdgeKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Box2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5BitHacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Box3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5ContBox3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5ContMinBox3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5ConvexHull.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5ConvexHull1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5ConvexHull2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5CorePCH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Distance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistCircle3Circle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistLine2Line2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistLine2Ray2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistLine2Segment2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistLine3Box3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistLine3Circle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistLine3Line3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistLine3Ray3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistLine3Rectangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistLine3Segment3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistLine3Triangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint2Box2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint2Ellipse2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint2Hyperbola2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint2Line2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint2Ray2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint2Segment2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint3Box3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint3Circle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint3Ellipsoid3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint3Frustum3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint3Line3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint3Plane3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint3Ray3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint3Rectangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint3Segment3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistPoint3Tetrahedron3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistRay2Ray2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistRay2Segment2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistRay3Box3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistRay3Ray3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistRay3Rectangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistRay3Segment3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistRay3Triangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistRectangle3Rectangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistSegment2Segment2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistSegment3Box3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistSegment3Rectangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistSegment3Segment3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistSegment3Triangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistTriangle3Rectangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5DistTriangle3Triangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5EigenDecomposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Endian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5FileIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Float1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Float2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Float3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Float4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5GMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5GVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Integer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Line3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Mathematics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Matrix2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Matrix3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Matrix4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5MutexType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Plane3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Quaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Query2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Query2Filtered.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Query2Int64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Query2Integer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Query2Rational.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Query3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Query3Filtered.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Query3Int64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Query3Integer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Query3Rational.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Rational.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5RVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5RVector2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5RVector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5SingularValueDecomposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Triangle3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Tuple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Vector2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Vector4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5ApprGaussPointsFit3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5Assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BC4B4160-B45F-4D9C-AE64-A2C4EA8BB987}</ProjectGuid>
+    <RootNamespace>OBB</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files\MATLAB\R2016a\extern\include</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="symOBB_PointSet.cpp" />
+    <ClCompile Include="oobb.cpp" />
+    <ClCompile Include="sym_bb.cpp" />
+    <ClCompile Include="sym_plane.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="Wm5ApprGaussPointsFit3.cpp" />
+    <ClCompile Include="Wm5Assert.cpp" />
+    <ClCompile Include="Wm5BitHacks.cpp" />
+    <ClCompile Include="Wm5ContBox3.cpp" />
+    <ClCompile Include="Wm5ContMinBox2.cpp" />
+    <ClCompile Include="Wm5ContMinBox3.cpp" />
+    <ClCompile Include="Wm5ContSymBox3.cpp" />
+    <ClCompile Include="Wm5ConvexHull.cpp" />
+    <ClCompile Include="Wm5ConvexHull1.cpp" />
+    <ClCompile Include="Wm5ConvexHull2.cpp" />
+    <ClCompile Include="Wm5ConvexHull3.cpp" />
+    <ClCompile Include="Wm5CorePCH.cpp" />
+    <ClCompile Include="Wm5Distance.cpp" />
+    <ClCompile Include="Wm5DistCircle3Circle3.cpp" />
+    <ClCompile Include="Wm5DistLine2Line2.cpp" />
+    <ClCompile Include="Wm5DistLine2Ray2.cpp" />
+    <ClCompile Include="Wm5DistLine2Segment2.cpp" />
+    <ClCompile Include="Wm5DistLine3Box3.cpp" />
+    <ClCompile Include="Wm5DistLine3Circle3.cpp" />
+    <ClCompile Include="Wm5DistLine3Line3.cpp" />
+    <ClCompile Include="Wm5DistLine3Ray3.cpp" />
+    <ClCompile Include="Wm5DistLine3Rectangle3.cpp" />
+    <ClCompile Include="Wm5DistLine3Segment3.cpp" />
+    <ClCompile Include="Wm5DistLine3Triangle3.cpp" />
+    <ClCompile Include="Wm5DistPoint2Box2.cpp" />
+    <ClCompile Include="Wm5DistPoint2Ellipse2.cpp" />
+    <ClCompile Include="Wm5DistPoint2Hyperbola2.cpp" />
+    <ClCompile Include="Wm5DistPoint2Line2.cpp" />
+    <ClCompile Include="Wm5DistPoint2Ray2.cpp" />
+    <ClCompile Include="Wm5DistPoint2Segment2.cpp" />
+    <ClCompile Include="Wm5DistPoint3Box3.cpp" />
+    <ClCompile Include="Wm5DistPoint3Circle3.cpp" />
+    <ClCompile Include="Wm5DistPoint3Ellipsoid3.cpp" />
+    <ClCompile Include="Wm5DistPoint3Frustum3.cpp" />
+    <ClCompile Include="Wm5DistPoint3Line3.cpp" />
+    <ClCompile Include="Wm5DistPoint3Plane3.cpp" />
+    <ClCompile Include="Wm5DistPoint3Ray3.cpp" />
+    <ClCompile Include="Wm5DistPoint3Rectangle3.cpp" />
+    <ClCompile Include="Wm5DistPoint3Segment3.cpp" />
+    <ClCompile Include="Wm5DistPoint3Tetrahedron3.cpp" />
+    <ClCompile Include="Wm5DistPoint3Triangle3.cpp" />
+    <ClCompile Include="Wm5DistRay2Ray2.cpp" />
+    <ClCompile Include="Wm5DistRay2Segment2.cpp" />
+    <ClCompile Include="Wm5DistRay3Box3.cpp" />
+    <ClCompile Include="Wm5DistRay3Ray3.cpp" />
+    <ClCompile Include="Wm5DistRay3Rectangle3.cpp" />
+    <ClCompile Include="Wm5DistRay3Segment3.cpp" />
+    <ClCompile Include="Wm5DistRay3Triangle3.cpp" />
+    <ClCompile Include="Wm5DistRectangle3Rectangle3.cpp" />
+    <ClCompile Include="Wm5DistSegment2Segment2.cpp" />
+    <ClCompile Include="Wm5DistSegment3Box3.cpp" />
+    <ClCompile Include="Wm5DistSegment3Rectangle3.cpp" />
+    <ClCompile Include="Wm5DistSegment3Segment3.cpp" />
+    <ClCompile Include="Wm5DistSegment3Triangle3.cpp" />
+    <ClCompile Include="Wm5DistTriangle3Rectangle3.cpp" />
+    <ClCompile Include="Wm5DistTriangle3Triangle3.cpp" />
+    <ClCompile Include="Wm5EigenDecomposition.cpp" />
+    <ClCompile Include="Wm5Endian.cpp" />
+    <ClCompile Include="Wm5FileIO.cpp" />
+    <ClCompile Include="Wm5Math.cpp" />
+    <ClCompile Include="Wm5MathematicsPCH.cpp" />
+    <ClCompile Include="Wm5Matrix2.cpp" />
+    <ClCompile Include="Wm5Matrix3.cpp" />
+    <ClCompile Include="Wm5Matrix4.cpp" />
+    <ClCompile Include="Wm5Memory.cpp" />
+    <ClCompile Include="Wm5Mutex.cpp" />
+    <ClCompile Include="Wm5Quaternion.cpp" />
+    <ClCompile Include="Wm5Query.cpp" />
+    <ClCompile Include="Wm5SingularValueDecomposition.cpp" />
+    <ClCompile Include="Wm5Vector2.cpp" />
+    <ClCompile Include="Wm5Vector3.cpp" />
+    <ClCompile Include="Wm5Vector4.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Wm5Box2.inl" />
+    <None Include="Wm5EdgeKey.inl" />
+    <None Include="Wm5Memory.inl" />
+    <None Include="Wm5Vector3.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Wm5ApprGaussPointsFit3.h" />
+    <ClInclude Include="Wm5Assert.h" />
+    <ClInclude Include="Wm5BitHacks.h" />
+    <ClInclude Include="Wm5Box2.h" />
+    <ClInclude Include="Wm5Box3.h" />
+    <ClInclude Include="Wm5ContBox3.h" />
+    <ClInclude Include="Wm5ContMinBox2.h" />
+    <ClInclude Include="Wm5ContMinBox3.h" />
+    <ClInclude Include="Wm5ContSymBox3.h" />
+    <ClInclude Include="Wm5ConvexHull.h" />
+    <ClInclude Include="Wm5ConvexHull1.h" />
+    <ClInclude Include="Wm5ConvexHull2.h" />
+    <ClInclude Include="Wm5ConvexHull3.h" />
+    <ClInclude Include="Wm5CoreLIB.h" />
+    <ClInclude Include="Wm5CorePCH.h" />
+    <ClInclude Include="Wm5Distance.h" />
+    <ClInclude Include="Wm5DistCircle3Circle3.h" />
+    <ClInclude Include="Wm5DistLine2Line2.h" />
+    <ClInclude Include="Wm5DistLine2Ray2.h" />
+    <ClInclude Include="Wm5DistLine2Segment2.h" />
+    <ClInclude Include="Wm5DistLine3Box3.h" />
+    <ClInclude Include="Wm5DistLine3Circle3.h" />
+    <ClInclude Include="Wm5DistLine3Line3.h" />
+    <ClInclude Include="Wm5DistLine3Ray3.h" />
+    <ClInclude Include="Wm5DistLine3Rectangle3.h" />
+    <ClInclude Include="Wm5DistLine3Segment3.h" />
+    <ClInclude Include="Wm5DistLine3Triangle3.h" />
+    <ClInclude Include="Wm5DistPoint2Box2.h" />
+    <ClInclude Include="Wm5DistPoint2Ellipse2.h" />
+    <ClInclude Include="Wm5DistPoint2Hyperbola2.h" />
+    <ClInclude Include="Wm5DistPoint2Line2.h" />
+    <ClInclude Include="Wm5DistPoint2Ray2.h" />
+    <ClInclude Include="Wm5DistPoint2Segment2.h" />
+    <ClInclude Include="Wm5DistPoint3Box3.h" />
+    <ClInclude Include="Wm5DistPoint3Circle3.h" />
+    <ClInclude Include="Wm5DistPoint3Ellipsoid3.h" />
+    <ClInclude Include="Wm5DistPoint3Frustum3.h" />
+    <ClInclude Include="Wm5DistPoint3Line3.h" />
+    <ClInclude Include="Wm5DistPoint3Plane3.h" />
+    <ClInclude Include="Wm5DistPoint3Ray3.h" />
+    <ClInclude Include="Wm5DistPoint3Rectangle3.h" />
+    <ClInclude Include="Wm5DistPoint3Segment3.h" />
+    <ClInclude Include="Wm5DistPoint3Tetrahedron3.h" />
+    <ClInclude Include="Wm5DistPoint3Triangle3.h" />
+    <ClInclude Include="Wm5DistRay2Ray2.h" />
+    <ClInclude Include="Wm5DistRay2Segment2.h" />
+    <ClInclude Include="Wm5DistRay3Box3.h" />
+    <ClInclude Include="Wm5DistRay3Ray3.h" />
+    <ClInclude Include="Wm5DistRay3Rectangle3.h" />
+    <ClInclude Include="Wm5DistRay3Segment3.h" />
+    <ClInclude Include="Wm5DistRay3Triangle3.h" />
+    <ClInclude Include="Wm5DistRectangle3Rectangle3.h" />
+    <ClInclude Include="Wm5DistSegment2Segment2.h" />
+    <ClInclude Include="Wm5DistSegment3Box3.h" />
+    <ClInclude Include="Wm5DistSegment3Rectangle3.h" />
+    <ClInclude Include="Wm5DistSegment3Segment3.h" />
+    <ClInclude Include="Wm5DistSegment3Triangle3.h" />
+    <ClInclude Include="Wm5DistTriangle3Rectangle3.h" />
+    <ClInclude Include="Wm5DistTriangle3Triangle3.h" />
+    <ClInclude Include="Wm5EdgeKey.h" />
+    <ClInclude Include="Wm5EigenDecomposition.h" />
+    <ClInclude Include="Wm5Endian.h" />
+    <ClInclude Include="Wm5FileIO.h" />
+    <ClInclude Include="Wm5Float1.h" />
+    <ClInclude Include="Wm5Float2.h" />
+    <ClInclude Include="Wm5Float3.h" />
+    <ClInclude Include="Wm5Float4.h" />
+    <ClInclude Include="Wm5GMatrix.h" />
+    <ClInclude Include="Wm5GVector.h" />
+    <ClInclude Include="Wm5Integer.h" />
+    <ClInclude Include="Wm5Line3.h" />
+    <ClInclude Include="Wm5Math.h" />
+    <ClInclude Include="Wm5Mathematics.h" />
+    <ClInclude Include="Wm5MathematicsLIB.h" />
+    <ClInclude Include="Wm5MathematicsPCH.h" />
+    <ClInclude Include="Wm5Matrix2.h" />
+    <ClInclude Include="Wm5Matrix3.h" />
+    <ClInclude Include="Wm5Matrix4.h" />
+    <ClInclude Include="Wm5Memory.h" />
+    <ClInclude Include="Wm5Mutex.h" />
+    <ClInclude Include="Wm5MutexType.h" />
+    <ClInclude Include="Wm5Plane3.h" />
+    <ClInclude Include="Wm5Quaternion.h" />
+    <ClInclude Include="Wm5Query.h" />
+    <ClInclude Include="Wm5Query2.h" />
+    <ClInclude Include="Wm5Query2Filtered.h" />
+    <ClInclude Include="Wm5Query2Int64.h" />
+    <ClInclude Include="Wm5Query2Integer.h" />
+    <ClInclude Include="Wm5Query2Rational.h" />
+    <ClInclude Include="Wm5Query3.h" />
+    <ClInclude Include="Wm5Query3Filtered.h" />
+    <ClInclude Include="Wm5Query3Int64.h" />
+    <ClInclude Include="Wm5Query3Integer.h" />
+    <ClInclude Include="Wm5Query3Rational.h" />
+    <ClInclude Include="Wm5Rational.h" />
+    <ClInclude Include="Wm5RVector.h" />
+    <ClInclude Include="Wm5RVector2.h" />
+    <ClInclude Include="Wm5RVector3.h" />
+    <ClInclude Include="Wm5SingularValueDecomposition.h" />
+    <ClInclude Include="Wm5Table.h" />
+    <ClInclude Include="Wm5Triangle3.h" />
+    <ClInclude Include="Wm5Tuple.h" />
+    <ClInclude Include="Wm5Vector2.h" />
+    <ClInclude Include="Wm5Vector3.h" />
+    <ClInclude Include="Wm5Vector4.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
