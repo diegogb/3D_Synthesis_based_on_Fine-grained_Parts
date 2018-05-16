@@ -1,0 +1,149 @@
+%--------------------------------------------------------------------------
+%Developed by: DIEGO GONZALEZ BECERRA
+%%%%%
+% This script allows you to replicate the same synthesized shapes presented in Figure 10 of our paper:
+% 	Diego Gonzalez and Oliver van Kaick, "3D Synthesis of Man-made Objects based on Fine-grained Parts", Computers & Graphics - SMI 2018 (to appear), 2018.
+%%%%%
+%
+%Usage: 
+% 1) IMPORTANT: 
+%   The variable "mainDir" below should be a valid path containing the pre-processed information 
+%   of the Hybrid dataset. That is, "mainDir" is a folder that MUST contain the 3 files: 
+%       synthBasedOnFG-Hybrid.mat, synthBasedOnFG-HybridMS1.mat, synthBasedOnFG-HybridMS2.mat
+%   By default, this script assumes that the files
+%   synthBasedOnFG-Hybrid.mat, synthBasedOnFG-HybridMS1.mat, and synthBasedOnFG-HybridMS2.mat
+%   are in the same folder of this script.
+%   %%%
+%   NOTE: if desired, you can copy the ".mat" files to any directory in your computer, 
+%       and then, you just have to set the variable "mainDir" to that folder
+%   %%%
+%
+% 2) Run this script. If the process is successful, you will find one pair
+% of files for each 3D shape synthesized in the folder given by the path: <mainDir>\SynthesizedRep
+% One file is the synthesized point cloud: .ply file; and the other, the synthesized mesh: .obj file
+%
+% For example, the file "new_Fig10A-PC.ply" contains the synthesized point cloud of Figure 10(a), 
+% and the file "new_Fig10A-Mesh.obj", contains the synthesized mesh of Figure 10(a)
+%--------------------------------------------------------------------------
+
+%Main Folder, which MUST contain the .mat file with the info. of the Tables dataset:
+clear;
+mainDir= pwd;
+%mainDir= 'C:\3D_Synthesis_based_on_Fine-grained_Parts\';
+
+%try to find the .mat variable in the folder "mainDir"
+if (exist(mainDir, 'dir'))
+    if (exist(fullfile(mainDir, 'synthBasedOnFG-Hybrid.mat'), 'file')) && (exist(fullfile(mainDir, 'synthBasedOnFG-HybridMS1.mat'), 'file'))
+        fprintf('This script can take a few minutes...\n');
+        fprintf('Loading pre-processed data of the Hybrid dataset\n');
+        %Load the pre-processed information of the Hybrid set:
+        load(fullfile(mainDir, 'synthBasedOnFG-Hybrid.mat'));
+        load(fullfile(mainDir, 'synthBasedOnFG-HybridMS1.mat'));
+        load(fullfile(mainDir, 'synthBasedOnFG-HybridMS2.mat'));
+        
+        %We had to divide the data of the segments of the hybrid in two
+        %parts, so here we concat. the info. again
+        meshSegmentsAll= [meshSegmentsA1 meshSegmentsA2];
+        
+        %Folder to write the generated 3D files:
+        outdir= fullfile(mainDir, 'SynthesizedRep');
+        if (~exist(outdir, 'dir'))
+            %Create the output folder if it does not exist
+            mkdir(outdir);
+        end
+        
+        fprintf('Generating shape of Figure 10(a)...\n');
+        
+        %We set the segments of the Template for the first shape: Figure 10(a)
+        templateIndices= fGetSegIndicesPerShape(segmentsAll, 16);
+        %%%
+        %NOTE: 
+        %By default, our method samples segments at random from the array of segments "segmentsArrayT", 
+        %to generate new 3D shapes replacing each fine-grained segment of the template.
+        %
+        %For this script, we skip this sampling step, and we directly assign the segments that were 
+        %selected by our method at the moment of the generation of the results shown in the paper
+        selSeg= selSegsFig10a;
+        %%%
+        
+        %Synthesize the 3D point cloud of Figure 10(a)
+        [err, ~, transforms] = fSynthesizeNovelShape(segmentsAll, samplingsAll, templateIndices, selSeg, segmentsAdjAll, fullfile(outdir, 'new_Fig10A-PC.ply'), true);
+        %Synthesize the 3D mesh of Figure 10(a)
+        if (~err)
+            err= fSynthesizeMeshFromPoints(meshSegmentsAll, segmentsAll, samplingsAll, selSeg, transforms, templateIndices, segmentsAdjAll, true, fullfile(outdir, 'new_Fig10A-Mesh.obj'), false, false);
+        end
+        
+        if (~err)
+            %For figure 10(b)...
+            fprintf('Generating shape of Figure 10(b)...\n');
+            
+            templateIndices= fGetSegIndicesPerShape(segmentsAll, 11);
+            selSeg= selSegsFig10b;
+            
+            %[err, ~, transforms] = fSynthesizeNovelShape(segmentsArrayT, samplingsArrayT, templateIndices, selSeg, segmentsAdjT, fullfile(outdir, 'new_Fig10B-PC.ply'), true);
+            [err, ~, transforms] = fSynthesizeNovelShape(segmentsAll, samplingsAll, templateIndices, selSeg, segmentsAdjAll, fullfile(outdir, 'new_Fig10B-PC.ply'), true);
+            if (~err)                
+                err= fSynthesizeMeshFromPoints(meshSegmentsAll, segmentsAll, samplingsAll, selSeg, transforms, templateIndices, segmentsAdjAll, true, fullfile(outdir, 'new_Fig10B-Mesh.obj'), false);
+            end
+        end
+        
+        if (~err)
+            %For figure 10(c)...
+            fprintf('Generating shape of Figure 10(c)...\n');
+            templateIndices= fGetSegIndicesPerShape(segmentsAll, 7);
+            selSeg= selSegsFig10c;
+            
+            [err, ~, transforms] = fSynthesizeNovelShape(segmentsAll, samplingsAll, templateIndices, selSeg, segmentsAdjAll, fullfile(outdir, 'new_Fig10C-PC.ply'), true);
+            if (~err)                
+                err= fSynthesizeMeshFromPoints(meshSegmentsAll, segmentsAll, samplingsAll, selSeg, transforms, templateIndices, segmentsAdjAll, true, fullfile(outdir, 'new_Fig10C-Mesh.obj'), false);
+            end
+        end
+        
+        if (~err)
+            %For figure 10(d)...
+            fprintf('Generating shape of Figure 10(d) , (and Figure 1 right)...\n');
+            templateIndices= fGetSegIndicesPerShape(segmentsAll, 19);
+            selSeg= selSegsFig10d;
+            
+            [err, ~, transforms] = fSynthesizeNovelShape(segmentsAll, samplingsAll, templateIndices, selSeg, segmentsAdjAll, fullfile(outdir, 'new_Fig10D-PC.ply'), true);
+            if (~err)
+                err= fSynthesizeMeshFromPoints(meshSegmentsAll, segmentsAll, samplingsAll, selSeg, transforms, templateIndices, segmentsAdjAll, true, fullfile(outdir, 'new_Fig10D-Mesh.obj'), false);
+            end
+        end
+        
+        if (~err)
+            %For figure 10(e)...
+            fprintf('Generating shape of Figure 10(e)...\n');
+            templateIndices= fGetSegIndicesPerShape(segmentsAll, 17);
+            selSeg= selSegsFig10e;
+            
+            [err, ~, transforms] = fSynthesizeNovelShape(segmentsAll, samplingsAll, templateIndices, selSeg, segmentsAdjAll, fullfile(outdir, 'new_Fig10E-PC.ply'), true);
+            if (~err)
+                err= fSynthesizeMeshFromPoints(meshSegmentsAll, segmentsAll, samplingsAll, selSeg, transforms, templateIndices, segmentsAdjAll, true, fullfile(outdir, 'new_Fig10E-Mesh.obj'), false);
+            end
+        end
+        
+        if (~err)
+            %For figure 10(f)...
+            fprintf('Generating shape of Figure 10(f)...\n');    
+            templateIndices= fGetSegIndicesPerShape(segmentsAll, 2);
+            selSeg= selSegsFig10f;
+            
+            [err, ~, transforms] = fSynthesizeNovelShape(segmentsAll, samplingsAll, templateIndices, selSeg, segmentsAdjAll, fullfile(outdir, 'new_Fig10F-PC.ply'), true);
+            if (~err)
+                err= fSynthesizeMeshFromPoints(meshSegmentsAll, segmentsAll, samplingsAll, selSeg, transforms, templateIndices, segmentsAdjAll, false, fullfile(outdir, 'new_Fig10F-Mesh.obj'), true);
+            end
+        end
+        
+        if (~err)
+            fprintf(['The process finished successfully! All the 3D Shapes of Figure 10 of the paper have been generated in the folder:\n' strrep(outdir,'\','\\')]);
+            fprintf('\n');
+        else
+            fprintf('The script ended with errors. Some of the 3D shapes of Figure 10 of the paper probably were not generated\n');
+        end
+    else
+        errordlg('The required ".mat" files of the hybrid dataset could not be found in the folder given by the variable "mainDir"');
+    end
+else
+    errordlg('The variable "mainDir" must specify a valid folder containing the required .mat files of the hybrid set');
+end
