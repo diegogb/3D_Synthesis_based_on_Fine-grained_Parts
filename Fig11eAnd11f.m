@@ -7,7 +7,6 @@
 %
 %Usage: 
 % 1) IMPORTANT: 
-% 1) IMPORTANT: 
 %   The variable "mainDir" below should be a valid path containing the pre-processed information 
 %   of the Hybrid dataset. That is, "mainDir" is a folder that MUST contain the 3 files: 
 %       synthBasedOnFG-Hybrid.mat, synthBasedOnFG-HybridMS1.mat, synthBasedOnFG-HybridMS2.mat
