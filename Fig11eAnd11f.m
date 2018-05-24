@@ -7,13 +7,16 @@
 %
 %Usage: 
 % 1) IMPORTANT: 
+% 1) IMPORTANT: 
 %   The variable "mainDir" below should be a valid path containing the pre-processed information 
-%   of the Hybrid dataset. That is, "mainDir" is a folder that MUST contain the file: synthBasedOnFG-Hybrid.mat
-%   By default, this script assumes that the file synthBasedOnFG-Hybrid.mat
-%   is in the same folder of this script.
+%   of the Hybrid dataset. That is, "mainDir" is a folder that MUST contain the 3 files: 
+%       synthBasedOnFG-Hybrid.mat, synthBasedOnFG-HybridMS1.mat, synthBasedOnFG-HybridMS2.mat
+%   By default, this script assumes that the files
+%   synthBasedOnFG-Hybrid.mat, synthBasedOnFG-HybridMS1.mat, and synthBasedOnFG-HybridMS2.mat
+%   are in the same folder of this script.
 %   %%%
-%   NOTE: if desired, you can copy the file synthBasedOnFG-Hybrid.mat to any directory in your computer, 
-%       and you just have to set the variable "mainDir" to that folder
+%   NOTE: if desired, you can copy the ".mat" files to any directory in your computer, 
+%       and then, you just have to set the variable "mainDir" to that folder
 %   %%%
 %
 % 2) Run this script. If the process is successful, you will find one pair
@@ -34,11 +37,17 @@ mainDir= pwd;
 
 %try to find the .mat variable in the folder "mainDir"
 if (exist(mainDir, 'dir'))
-    if (exist(fullfile(mainDir, 'synthBasedOnFG-Hybrid.mat'), 'file'))
-        fprintf('This script can take a few moments...\n');
+    if (exist(fullfile(mainDir, 'synthBasedOnFG-Hybrid.mat'), 'file')) && (exist(fullfile(mainDir, 'synthBasedOnFG-HybridMS1.mat'), 'file'))
+        fprintf('This script can take a few minutes...\n');
         fprintf('Loading pre-processed data of the Hybrid dataset\n');
         %Load the pre-processed information of the Hybrid set:
         load(fullfile(mainDir, 'synthBasedOnFG-Hybrid.mat'));
+        load(fullfile(mainDir, 'synthBasedOnFG-HybridMS1.mat'));
+        load(fullfile(mainDir, 'synthBasedOnFG-HybridMS2.mat'));
+        
+        %We had to divide the data of the segments of the hybrid in two
+        %parts, so here we concat. the info. again
+        meshSegmentsAll= [meshSegmentsA1 meshSegmentsA2];
         
         %Folder to write the generated 3D files:
         outdir= fullfile(mainDir, 'SynthesizedRep');
