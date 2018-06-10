@@ -1,16 +1,15 @@
 # 3D_Synthesis_based_on_Fine-grained_Parts
-Code for synthesizing 3D Man-made Shapes using fine-grained segments. This is the code for the following article: 
+Code for synthesizing 3D Man-made Shapes using fine-grained segments. This is the code for the following paper: 
 
 **
-@article{GONZALEZ2018150,
-title = "3D synthesis of man-made objects based on fine-grained parts",
-author = "Diego Gonzalez and Oliver van Kaick",
-journal = "Computers & Graphics",
-volume = "74",
-pages = "150 - 160",
-year = "2018",
-doi = "https://doi.org/10.1016/j.cag.2018.05.016"
-}
+@article{ GONZALEZ2018150,\
+title = "3D synthesis of man-made objects based on fine-grained parts",\
+author = "Diego Gonzalez and Oliver van Kaick",\
+journal = "Computers & Graphics",\
+volume = "74",\
+pages = "150 - 160",\
+year = "2018",\
+doi = "https://doi.org/10.1016/j.cag.2018.05.016" }
 **
 
 Please cite our publication if you use our code.
@@ -86,7 +85,7 @@ https://www.mathworks.com/support/compilers.html
 
 4.1) To replicate the figures shown in our paper, run the script files called "FigN.m" to generate the 3D shapes (point cloud and mesh) for the corresponding figure.
 
-*NOTE: We do not include a script for Figure 12 center, since this figure shows a synthesized point cloud that is the same as the one shown in Fig 7(b). Likewise, we do not include the 3D meshes of Figure 1, since they are also presented in other figures of our article*
+*NOTE: We do not include a script for Figure 12 center, since this figure shows the same synthesized point cloud shown in Fig 7(b). Likewise, we do not include the 3D meshes of Figure 1, since they are also presented in other figures of our article*
 
 4.2) To generate timing statistics: on matlab, run the following scripts: 
 
